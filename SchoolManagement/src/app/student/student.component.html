@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <form [formGroup]="studentFormGroup" >
+        <div class="container">
+            <div>
+                <label for="name">Student Name</label><br>
+                <input  type="text" formControlName="name">
+            </div>
+            <div>
+                <label for="dob">Date Of Birth</label><br>
+                <input type="date" formControlName="dob">
+            </div>
+            <div>
+                <label for="gender">Gender</label><br>
+                <input type="text" formControlName="gender">
+            </div>
+            <div>
+                <label for="address">Address</label><br>
+                <input type="text" formControlName="address">
+            </div>
+            <div>
+                <label for="mobile">Mobile Number</label><br>
+                <input type="text" formControlName="mobile">
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="text" formControlName="email"> 
+            </div>
+            <div>
+                <label for="std">Standerd</label><br>
+                <input type="text" formControlName="std"> 
+            </div>
+            <br>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

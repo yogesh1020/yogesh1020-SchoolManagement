@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form [formGroup]="standardFormGroup">
+        <div class=" container">
+            <div>
+                <label for="stuId">Student Id</label><br>
+                <input  type="text" formControlName="stuId">
+            </div>
+            <div>
+                <label for="standard">Student Name</label><br>
+                <input type="text" formControlName="name">
+            </div>
+            <div>
+                <label for="standard">Standard Name</label><br>
+                <select (change)="standard($event)" >
+                    <option>Nursery</option>
+                    <option>Junior KG</option>
+                    <option>Senior KG</option>
+                </select> 
+            </div>
+            <br>
+            <button (click)="submit()" >Submit</button>
+        </div>
+    </form>
+</body>
+</html>
